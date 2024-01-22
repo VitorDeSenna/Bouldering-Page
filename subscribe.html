@@ -8,21 +8,22 @@
     <p>Ready to become a part of the Boulderpalooza community and enjoy all the perks of our bouldering gym?
          Fill out the form below to subscribe and stay updated on the latest news, events, and exclusive offers.</p>
     <h3>Subscription Form:</h3>
-    <ul>
-        <li>Full Name: </li>
-        <li>Email Address:</li>
-        <li>Phone Number:</li>
-        <li>Preferred Subscription Type: [Drop-down menu with subscription options, e.g., Monthly, Annual]</li>
-        <li>Comments/Questions: [Textarea for any additional comments or questions]</li>
-    </ul>
-    <h3>Terms and Conditions:</h3>
+    <form name="subscriptionForm">
+        Full Name:<input type="text" name="name" /><br>
+        Email: <input type="email" name="email" /><br>
+        Age: <input type="number" min="8" max="100" name="age"/><br>
+        Phone Number: <input type="number" name="phone" /><br> <!--There us a type called "tel" that it is used for phone numbers, I need to understand how to use it together with the "pattern" atribute-->
+        Preferred Subscription Type: <!--Drop-down menu with subscription options, e.g., Monthly, Annual]--> <input type="text" name="subscription"/><br>
+        Comments/Questions: <!--[Textarea for any additional comments or questions]--> <input type="text" name="comments" /><br>
+        <h3>Terms and Conditions:</h3>
     <p>By subscribing to Boulderpalooza, you agree to our terms and conditions. Please review our 
         [link to Terms and Conditions page] for more details.</p>
-    <!--Subscription Button-->
     <p>Once you've submitted your subscription request, a member of our team will get in touch with you to finalize 
         the process and welcome you to the Boulderpalooza family.
          <!--This make a invisible line in the page--> <br>
         Thank you for choosing Boulderpalooza: A Bouldering Odyssey as your climbing destination! We can't wait to climb and laugh with you.</p>
+        <button type="submit"> Subscribe</button>
+    </form>
 
         <!--To navigate in the website-->
         <ul>
