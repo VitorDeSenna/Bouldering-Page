@@ -11,7 +11,8 @@
     <form onsubmit="" method="get" name="subscriptionForm">
         Full Name:<sup>* </sup><input type="text" name="name" /><br>
         Email:<sup>* </sup> <input type="email" name="email" /><br>
-        Age:<sup>* </sup> <input type="number" min="8" max="100" name="age"/><br>
+        Age:<sup>* </sup> <input type="number" min="8" max="100" style="width: 30px" name="age"/><br>
+        Birthday:<sup>*</sup> <input type="date" name="birthday" /> <br>
         Phone Number:<sup>* </sup> <input type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" name="phone" /><br> <!--There us a type called "tel" that it is used for phone numbers, I need to understand how to use it together with the "pattern" atribute-->
         Preferred Subscription Type:<sup>* </sup> <!--Drop-down menu with subscription options, e.g., Monthly, Annual]-->
         <!--"Select" makes a drop down menu--><Select name="subscription">
