@@ -8,18 +8,29 @@
     <p>Ready to become a part of the Boulderpalooza community and enjoy all the perks of our bouldering gym?
          Fill out the form below to subscribe and stay updated on the latest news, events, and exclusive offers.</p>
     <h3>Subscription Form:</h3>
-    <form name="subscriptionForm">
-        Full Name:<input type="text" name="name" /><br>
-        Email: <input type="email" name="email" /><br>
-        Age: <input type="number" min="8" max="100" name="age"/><br>
-        Phone Number: <input type="number" name="phone" /><br> <!--There us a type called "tel" that it is used for phone numbers, I need to understand how to use it together with the "pattern" atribute-->
-        Preferred Subscription Type: <!--Drop-down menu with subscription options, e.g., Monthly, Annual]--> <br>
-        <input type="radio" name="subscription" value="option1"/>Monthly<br>
+    <form onsubmit="" method="get" name="subscriptionForm">
+        Full Name:<sup>* </sup><input type="text" name="name" /><br>
+        Email:<sup>* </sup> <input type="email" name="email" /><br>
+        Age:<sup>* </sup> <input type="number" min="8" max="100" name="age"/><br>
+        Phone Number:<sup>* </sup> <input type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" name="phone" /><br> <!--There us a type called "tel" that it is used for phone numbers, I need to understand how to use it together with the "pattern" atribute-->
+        Preferred Subscription Type:<sup>* </sup> <!--Drop-down menu with subscription options, e.g., Monthly, Annual]-->
+        <!--"Select" makes a drop down menu--><Select name="subscription">
+            <option value="">Choose your subscription</option>
+            <option value="annual">Annual</option>
+            <option value="monthly">Monthly</option>
+            <option value="family">Familly</option>
+            <option value="kidsAnnual">Kids Annual</option>
+            <option value="kidsMontly">Kids Monthly</option>
+            <option value="student">Student</option>
+
+        </Select><br>
+        
+        <!--<input type="radio" name="subscription" value="option1"/>Monthly<br>
         <input type="radio" name="subscription"value="option2"/>Annual<br>
         <input type="radio" name="subscription"value="option3"/>Familly<br>
         <input type="radio" name="subscription"value="option4"/>Kids Annual<br>
-        <input type="radio" name="subscription"value="option5"/>Kids Monthly<br>
-        Comments/Questions: <!--[Textarea for any additional comments or questions]--> <input type="text" name="comments" /><br>
+        <input type="radio" name="subscription"value="option5"/>Kids Monthly<br>-->
+        Comments/Questions:  <textarea name="comments"></textarea><br>
         <h3>Terms and Conditions:</h3>
     <p>By subscribing to Boulderpalooza, you agree to our terms and conditions. Please review our 
         [link to Terms and Conditions page] for more details.</p>
