@@ -5,33 +5,54 @@
 </head>
 
 <body>
+    <header> <!--This should stay in the beginning of the page-->
+        <nav>
+            <!--To navigate in the website-->
+            <ul>
+                <li id="Top"><a href="index.html">Home Page</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="firtVisit.html">You First Visit</a></li>
+                <li><a href="courses.html">Our Courses</a></li>
+                <li><a href="shop.html">Gear Up!</a></li>
+            </ul>
+        </nav>
+    </header>
     <main>
-        <h2 id="Top">Subscribe to Boulderpalooza</h2>
+        <h2>Subscribe to Boulderpalooza</h2>
         <p>Ready to become a part of the Boulderpalooza community and enjoy all the perks of our bouldering gym?
             Fill out the form below to subscribe and stay updated on the latest news, events, and exclusive offers.</p>
         <h3>Subscription Form:</h3>
         <form onsubmit="" method="get" name="subscriptionForm">
             <!--I need to understand better the "onsubmit" and the "get"-->
-            Full Name:<sup>* </sup><input type="text" name="name" required /><br>
-            <!--"sup" makes whatever is in between to go higher-->
-            Email:<sup>* </sup> <input type="email" name="email" required /><br>
-            Age:<sup>* </sup> <input type="number" min="8" max="100" style="width: 30px" name="age" required />
-            <!--The style in this line changes the size of the box--><br>
-            Birthday:<sup>*</sup> <input type="date" name="birthday" required /> <br>
-            Phone Number:<sup>* </sup> <input type="tel" name="phone" /><br>
-            <!--There us a type called "tel" that it is used for phone numbers, I need to understand how to use it together with the "pattern" atribute-->
-            Preferred Subscription Type:<sup>* </sup>
-            <Select name="subscription" required> <!--"Select" makes a drop down menu-->
-                <option value="">Choose your subscription</option>
-                <option value="annual">Annual</option>
-                <option value="monthly">Monthly</option>
-                <option value="family">Familly</option>
-                <option value="kidsAnnual">Kids Annual</option>
-                <option value="kidsMontly">Kids Monthly</option>
-                <option value="student">Student</option>
-            </Select><br>
+            <fieldset>
+                <legend>Personal Data</legend>
 
-            Comments/Questions: <textarea name="comments"></textarea><br>
+                Full Name:<sup>* </sup><input type="text" name="name" autofocus required /><br>
+                <!--autofocus makes that when you load the page, that field is already selected-->
+                <!--"sup" makes whatever is in between to go higher-->
+                Email:<sup>* </sup> <input placeholder="myemail@email.com" type="email" name="email" required /><br>
+                <!--placeholder "writes" something as an example-->
+                Age:<sup>* </sup> <input type="number" min="8" max="100" style="width: 45px" name="age" required />
+                <!--The style in this line changes the size of the box--><br>
+                Birthday:<sup>*</sup> <input type="date" name="birthday" required /> <br>
+                Phone Number:<sup>* </sup> <input type="tel" name="phone" /><br>
+                <!--There us a type called "tel" that it is used for phone numbers, I need to understand how to use it together with the "pattern" atribute-->
+            </fieldset>
+            <fieldset>
+                <legend>Subscription Type</legend>
+                Preferred Subscription Type:<sup>* </sup>
+                <Select name="subscription" required> <!--"Select" makes a drop down menu-->
+                    <option value="">Choose your subscription</option>
+                    <option value="annual">Annual</option>
+                    <option value="monthly">Monthly</option>
+                    <option value="family">Familly</option>
+                    <option value="kidsAnnual">Kids Annual</option>
+                    <option value="kidsMontly">Kids Monthly</option>
+                    <option value="student">Student</option>
+                </Select><br>
+
+                Comments/Questions: <textarea name="comments"></textarea><br>
+            </fieldset>
             <h3>Terms and Conditions:</h3>
             <p>By subscribing to Boulderpalooza, you agree to our terms and conditions. Please review our
                 [link to Terms and Conditions page] for more details.</p>
@@ -46,22 +67,10 @@
             <button type="submit"> Subscribe</button>
         </form>
     </main>
-    <header> <!--This should stay in the beginning of the page-->
-        <nav>
-            <!--To navigate in the website-->
-            <ul>
-                <li><a href="index.html">Home Page</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="firtVisit.html">You First Visit</a></li>
-                <li><a href="courses.html">Our Courses</a></li>
-                <li><a href="shop.html">Gear Up!</a></li>
-                <li><a href="#Top">Back to the top</a></li><!--This stays on the bottom of the page-->
-            </ul>
-        </nav>
-    </header>
+
     <footer>
 
-
+        <p><a href="#Top">Back to the top</a></p>
     </footer>
 </body>
 
