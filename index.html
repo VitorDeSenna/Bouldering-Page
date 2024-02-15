@@ -1,37 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
+<!--Shift + Alt + F to indent the entire page-->
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/style.css"> 
-    <title>Boulderpalooza</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Boulderpalooza: A Bouldering Odyssey</title>
+    <!--Title is used for the title of the tab in the browser and when saving to favorites. It is also used for the search engine to search for it (using google for example). Try using max 50 letters.-->
+    <meta name="description" content="The bouldering gym that will change your mind about all other bouldering gyms" />
+    <!--This comes right after the tittle during the serach (google)-->
 </head>
+
 <body>
-    <section>
-        <div id="hero-pic"></div>
-        <div id="tex-box">
-            <h1 id="Top">Welcome to Boulderpalooza - A Bouldering Odyssey</h1>
-        <p>Are you ready to embark on an exciting bouldering adventure like no other? 
-        At <strong>Boulderpalooza</strong>, we're your gateway to an epic journey of climbing, laughter, and endless fun. 
-        Whether you're a seasoned climber or a newbie looking to try something new, our state-of-the-art bouldering facility
-         has something for everyone.</p>
-        </div>
-    </section>
-    
-    <h2>Why Choose Boulderpalooza?</h2>
-    <ul>
-        <li><strong>Expert Instructors:</strong> Our experienced and passionate instructors are here to guide climbers of all levels.</li>
-        <li><strong>Varied Routes:</strong> From beginner-friendly paths to challenging overhangs, our diverse bouldering routes keep things exciting.</li>
-        <li><strong>Community Vibes:</strong> Join our friendly community of climbers and share your passion for bouldering.</li>
-        <li><strong>Safety First:</strong> Your safety is our top priority, with top-notch equipment and safety measures in place.</li>
-        <li><strong>Events & Challenges:</strong> Stay tuned for exciting events, challenges, and competitions to test your climbing skills.</li>
-    </ul>
-    <p>Explore our website to learn more about what we offer and how you can get involved in the Boulderpalooza experience!</p>
-    <!--To navigate in the website-->
-    <ul>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="subscribe.html">Subscribe!</a></li>
-        <li><a href="#Top">Back to the top</a></li>
-    </ul>
+    <main>
+        <!--Where the more important part of the page is. This tag cannot be inside of a header or footer and only one is allowed per page-->
+        <header> <!--Used for the header of the page-->
+            <!-- <section> --><!-- I'm not sure if this section is important here, but it changes the font layout-->
+            <div id="hero-pic"></div>
+            <div id="tex-box">
+                <h1 id="Top">Welcome to Boulderpalooza - A Bouldering Odyssey</h1>
+                <!--h1 should be used only once in the page (maybe only once in the entire website). It is your main title. Use h2 (or others) for the following titles-->
+                <p>Are you ready to embark on an exciting bouldering adventure like no other?
+                    At <strong>Boulderpalooza</strong>, we're your gateway to an epic journey of climbing, laughter,
+                    and
+                    endless fun.
+                    Whether you're a seasoned climber or a newbie looking to try something new, our state-of-the-art
+                    bouldering facility
+                    has something for everyone.</p>
+            </div>
+            <!-- </section> -->
+        </header>
+
+        <section>
+            <h2>Why Choose Boulderpalooza?</h2>
+            <ul>
+                <li><strong>Expert Instructors:</strong> Our experienced and passionate instructors are here to guide
+                    climbers
+                    of all levels.</li>
+                <li><strong>Varied Routes:</strong> From beginner-friendly paths to challenging overhangs, our diverse
+                    bouldering routes keep things exciting.</li>
+                <li><strong>Community Vibes:</strong> Join our friendly community of climbers and share your passion for
+                    bouldering.</li>
+                <li><strong>Safety First:</strong> Your safety is our top priority, with top-notch equipment and safety
+                    measures
+                    in place.</li>
+                <li><strong>Events & Challenges:</strong> Stay tuned for exciting events, challenges, and competitions
+                    to
+                    test
+                    your climbing skills.</li>
+            </ul>
+        </section>
+        <nav><!--Section specific for a navigation menu-->
+            <p>Explore our website to learn more about what we offer and how you can get involved in the Boulderpalooza
+                experience!</p>
+            <!--To navigate in the website-->
+            <ul>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="firtVisit.html">You First Visit</a></li>
+                <li><a href="courses.html">Our Courses</a></li>
+                <li><a href="shop.html">Gear Up!</a></li>
+                <li><a href="subscribe.html">Subscribe!</a></li>
+                <li><a href="#Top">Back to the top</a></li><!--This stays on the bottom of the page-->
+            </ul>
+        </nav>
+    </main>
+    <footer> <!--Used for the footer of the page-->
+        <!--Here I should have a table. It will be the same in every page-->
+    </footer>
 </body>
+
 </html>
