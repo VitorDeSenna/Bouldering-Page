@@ -18,41 +18,48 @@
         </nav>
     </header>
     <main>
-        <h2>Subscribe to Boulderpalooza</h2>
-        <p>Ready to become a part of the Boulderpalooza community and enjoy all the perks of our bouldering gym?
-            Fill out the form below to subscribe and stay updated on the latest news, events, and exclusive offers.</p>
-        <h3>Subscription Form:</h3>
-        <form onsubmit="" method="get" name="subscriptionForm">
-            <!--I need to understand better the "onsubmit" and the "get"-->
-            <fieldset>
-                <legend>Personal Data</legend>
+        <section>
+            <h2>Subscribe to Boulderpalooza</h2>
+            <p>Ready to become a part of the Boulderpalooza community and enjoy all the perks of our bouldering gym?
+                Fill out the form below to subscribe and stay updated on the latest news, events, and exclusive offers.
+            </p>
+        </section>
+        <section>
+            <h3>Subscription Form:</h3>
+            <form onsubmit="" method="get" name="subscriptionForm">
+                <!--I need to understand better the "onsubmit" and the "get"-->
+                <fieldset>
+                    <legend>Personal Data</legend>
 
-                Full Name:<sup>* </sup><input type="text" name="name" autofocus required /><br>
-                <!--autofocus makes that when you load the page, that field is already selected-->
-                <!--"sup" makes whatever is in between to go higher-->
-                Email:<sup>* </sup> <input placeholder="myemail@email.com" type="email" name="email" required /><br>
-                <!--placeholder "writes" something as an example-->
-                Age:<sup>* </sup> <input type="number" min="8" max="100" style="width: 45px" name="age" required />
-                <!--The style in this line changes the size of the box--><br>
-                Birthday:<sup>*</sup> <input type="date" name="birthday" required /> <br>
-                Phone Number:<sup>* </sup> <input type="tel" name="phone" /><br>
-                <!--There us a type called "tel" that it is used for phone numbers, I need to understand how to use it together with the "pattern" atribute-->
-            </fieldset>
-            <fieldset>
-                <legend>Subscription Type</legend>
-                Preferred Subscription Type:<sup>* </sup>
-                <Select name="subscription" required> <!--"Select" makes a drop down menu-->
-                    <option value="">Choose your subscription</option>
-                    <option value="annual">Annual</option>
-                    <option value="monthly">Monthly</option>
-                    <option value="family">Familly</option>
-                    <option value="kidsAnnual">Kids Annual</option>
-                    <option value="kidsMontly">Kids Monthly</option>
-                    <option value="student">Student</option>
-                </Select><br>
+                    Full Name:<sup>* </sup><input type="text" name="name" autofocus required /><br>
+                    <!--autofocus makes that when you load the page, that field is already selected-->
+                    <!--"sup" makes whatever is in between to go higher-->
+                    Email:<sup>* </sup> <input placeholder="myemail@email.com" type="email" name="email" required /><br>
+                    <!--placeholder "writes" something as an example-->
+                    Age:<sup>* </sup> <input type="number" min="8" max="100" style="width: 45px" name="age" required />
+                    <!--The style in this line changes the size of the box--><br>
+                    Birthday:<sup>*</sup> <input type="date" name="birthday" required /> <br>
+                    Phone Number:<sup>* </sup> <input type="tel" name="phone" required /><br>
+                    <!--There us a type called "tel" that it is used for phone numbers, I need to understand how to use it together with the "pattern" atribute-->
+                </fieldset>
+                <fieldset>
+                    <legend>Subscription Type</legend>
+                    Preferred Subscription Type:<sup>* </sup>
+                    <Select name="subscription" required> <!--"Select" makes a drop down menu-->
+                        <option value="">Choose your subscription</option>
+                        <option value="annual">Annual</option>
+                        <option value="monthly">Monthly</option>
+                        <option value="family">Familly</option>
+                        <option value="kidsAnnual">Kids Annual</option>
+                        <option value="kidsMontly">Kids Monthly</option>
+                        <option value="student">Student</option>
+                    </Select><br>
 
-                Comments/Questions: <textarea name="comments"></textarea><br>
-            </fieldset>
+                    Comments/Questions: <textarea name="comments"></textarea><br>
+
+                </fieldset>
+        </section>
+        <aside>
             <h3>Terms and Conditions:</h3>
             <p>By subscribing to Boulderpalooza, you agree to our terms and conditions. Please review our
                 [link to Terms and Conditions page] for more details.</p>
@@ -60,11 +67,13 @@
                 finalize
                 the process and welcome you to the Boulderpalooza family.
                 <!--This make a invisible line in the page--> <br>
-                Thank you for choosing Boulderpalooza: A Bouldering Odyssey as your climbing destination! We can't wait
+                Thank you for choosing Boulderpalooza: A Bouldering Odyssey as your climbing destination! We can't
+                wait
                 to
                 climb and laugh with you.
             </p>
             <button type="submit"> Subscribe</button>
+        </aside>
         </form>
     </main>
 
